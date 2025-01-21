@@ -1,0 +1,17 @@
+:root[data-theme="dark"] {
+  --title-color: #E3E8EA;
+  --font-color: #A6AEBF;
+  --background-color: #0B1622;
+  --hover-color: #3D7ADD;
+  --border-color: #3D7ADD;
+  --button-color: #3D7ADD;
+}
+
+:root[data-theme="light"] {
+  --title-color: #0B1622;
+  --font-color: #0B1622;
+  --background-color: #EDF2F4;
+  --hover-color: #3D7ADD;
+  --border-color: #3D7ADD;
+  --button-color: #3D7ADD;
+}

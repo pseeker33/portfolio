@@ -1,0 +1,70 @@
+.about-me {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 70px; /* Height of navbar */
+  text-align: center;
+
+  background-color: darkgray;
+}
+
+.name {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--title-color);
+}
+
+.roles {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter {
+  display: inline-block;
+  color: var(--button-color);
+  font-weight: 600;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.description {
+  max-width: 800px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: var(--font-color);
+}
+
+@media (max-width: 768px) {
+  .about-me {
+    padding: 0 1rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .roles {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}

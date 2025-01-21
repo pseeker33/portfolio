@@ -1,0 +1,110 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.portfolio-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.navbar-center {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-center button {
+  background: none;
+  border: none;
+  color: var(--font-color);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 1s ease;
+}
+
+.navbar-center button:hover {
+  color: var(--hover-color);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.language-selector, .theme-selector {
+  position: relative;
+  width: 48px;
+  height: 24px;
+  background: var(--border-color);
+  border-radius: 12px;
+  padding: 2px;
+}
+
+.language-toggle, .theme-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.language-toggle.active {
+  transform: translateX(24px);
+}
+
+.theme-toggle.dark {
+  transform: translateX(24px);
+}
+
+.language-toggle img, .theme-toggle img {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1rem;
+  }
+
+  .navbar-center {
+    gap: 1rem;
+  }
+
+  .navbar-center button {
+    padding: 0.5rem;
+  }
+
+  .portfolio-label {
+    display: none;
+  }
+}
