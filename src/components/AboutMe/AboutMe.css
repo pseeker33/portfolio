@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem;
+  padding: 1rem;
   margin-top: 70px; /* Height of navbar */
   text-align: center;
 
-  background-color: darkgray;
+  /* background-color: darkgray; */
 }
 
 .name {
@@ -44,11 +44,56 @@
   50% { opacity: 0; }
 }
 
+.profile-picture {
+  width: 150px; /* Ajusta el tamaño según prefieras */
+  height: 150px;
+  border-radius: 50%;
+  margin: 1.5rem 0;
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para un efecto visual */
+  border: 3px solid var(--title-color); /* Opcional: borde con color temático */
+}
+
+.description-container {
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+
 .description {
-  max-width: 800px;
+  max-width: 900px;
   line-height: 1.6;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--font-color);
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.description-controls {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.control-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: #ccc;
+  cursor: pointer;
+  padding: 0;
+}
+
+.control-dot.active {
+  background: #666;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @media (max-width: 768px) {

@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
+import { VscColorMode } from "react-icons/vsc";
 import './Navbar.css';
 
 const Navbar = () => {
@@ -55,56 +56,6 @@ const Navbar = () => {
     requestAnimationFrame(customScroll);
   };
   
-  
-
-/*   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    const offset = document.querySelector('.navbar').offsetHeight;
-    const targetPosition = section.getBoundingClientRect().top + window.pageYOffset - offset;
-    
-    window.scrollTo({
-      top: targetPosition,
-      behavior: 'smooth'  // Usa el scroll nativo del navegador
-    });
-  }; */
-
-  /* const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    const start = window.pageYOffset;
-    const target = section.offsetTop;
-    const distance = target - start;
-    const duration = 3000; // 3 seconds
-    let startTime = null;
-
-    function animation(currentTime) {
-      if (startTime === null) startTime = currentTime;
-      const timeElapsed = currentTime - startTime;
-      const progress = Math.min(timeElapsed / duration, 1);
-      
-      // Custom easing function for acceleration and deceleration
-      let run = 0;
-      if (progress <= 1/3) {
-        // First second: Start moving (ease-in)
-        run = progress * 3 * (progress * 3) / 2;
-      } else if (progress <= 2/3) {
-        // Second second: Move fast (linear)
-        run = progress;
-      } else {
-        // Third second: Slow down (ease-out)
-        const t = (progress - 2/3) * 3;
-        run = 2/3 + (1 - (1 - t) * (1 - t)) / 3;
-      }
-
-      window.scrollTo(0, start + distance * run);
-
-      if (timeElapsed < duration) {
-        requestAnimationFrame(animation);
-      }
-    }
-
-    requestAnimationFrame(animation);
-  }; */
-
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -139,18 +90,16 @@ const Navbar = () => {
             />
           </button>
         </div>
+
+        <button
+          onClick={toggleTheme}
+          aria-label="color mode"
+          className="theme-toggle"
+        >
+          <VscColorMode className="theme-icon" />
+        </button>
         
-        <div className="theme-selector">
-          <button 
-            className={`theme-toggle ${isDarkMode ? 'dark' : 'light'}`}
-            onClick={toggleTheme}
-          >
-            <img 
-              src={`/${isDarkMode ? 'moon' : 'sun'}.svg`} 
-              alt={isDarkMode ? 'Dark Mode' : 'Light Mode'} 
-            />
-          </button>
-        </div>
+        
       </div>
     </nav>
   );

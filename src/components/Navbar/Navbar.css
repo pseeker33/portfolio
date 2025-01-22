@@ -42,7 +42,7 @@
   font-size: 1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .navbar-center button:hover {
@@ -55,7 +55,7 @@
   gap: 1rem;
 }
 
-.language-selector, .theme-selector {
+.language-selector {
   position: relative;
   width: 48px;
   height: 24px;
@@ -64,7 +64,7 @@
   padding: 2px;
 }
 
-.language-toggle, .theme-toggle {
+.language-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -82,14 +82,36 @@
   transform: translateX(24px);
 }
 
-.theme-toggle.dark {
-  transform: translateX(24px);
-}
-
-.language-toggle img, .theme-toggle img {
+.language-toggle img {
   width: 14px;
   height: 14px;
 }
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-icon {
+  font-size: 24px; /* o text-2xl en tailwind */
+  color: var(--font-color);
+  transform: rotate(180deg);
+  transition: all 400ms ease-in-out;
+}
+
+.dark .theme-icon {
+  transform: rotate(0deg);
+}
+
+.theme-icon:hover {
+  color: var(--hover-color);
+}
+
 
 @media (max-width: 768px) {
   .navbar {

@@ -1,27 +1,23 @@
-import { useContext } from 'react';
+import { useContext, useState, useEffect } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import TypeWriter from './TypeWriter';
+import { roles, descriptions } from '../../data/about';
 import './AboutMe.css';
 
 const AboutMe = () => {
   const { language } = useContext(ThemeContext);
+  const [currentDesc, setCurrentDesc] = useState(0);
+  const [isAutoPlay, setIsAutoPlay] = useState(true);
 
-  const roles = {
-    en: ["Data Analytics", "Blockchain Developer", "Web Developer"],
-    es: ["Analista de Datos", "Desarrollador Blockchain", "Desarrollador Web"]
-  };
-
-  const description = {
-    en: `Passionate about leveraging technology to solve complex problems. 
-    With expertise in data analytics, blockchain development, and web development, 
-    I bring a unique perspective to every project. My focus is on creating efficient, 
-    scalable solutions that drive real-world impact.`,
-    
-    es: `Apasionado por utilizar la tecnología para resolver problemas complejos. 
-    Con experiencia en análisis de datos, desarrollo blockchain y desarrollo web, 
-    aporto una perspectiva única a cada proyecto. Mi enfoque está en crear soluciones 
-    eficientes y escalables que generen impacto en el mundo real.`
-  };
+  
+  useEffect(() => {
+    if (isAutoPlay) {
+      const timer = setInterval(() => {
+        setCurrentDesc((prev) => (prev + 1) % 3);
+      }, 11000);
+      return () => clearInterval(timer);
+    }
+  }, [isAutoPlay]);
 
   return (
     <section id="about-me" className="about-me">
@@ -29,11 +25,30 @@ const AboutMe = () => {
       <div className="roles">
         <TypeWriter 
           texts={roles[language]} 
-          delay={100} 
+          delay={50} 
           pauseBetweenTexts={2000} 
         />
       </div>
-      <p className="description">{description[language]}</p>
+      <img 
+        src="../../../public/profile.jpeg" 
+        alt="Hoover Zavala" 
+        className="profile-picture" 
+      />
+      <div className="description-container">
+        <p className="description fade">{descriptions[language][currentDesc]}</p>
+        <div className="description-controls">
+          {[0, 1, 2].map((index) => (
+            <button
+              key={index}
+              className={`control-dot ${currentDesc === index ? 'active' : ''}`}
+              onClick={() => {
+                setCurrentDesc(index);
+                setIsAutoPlay(false);
+              }}
+            />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };
