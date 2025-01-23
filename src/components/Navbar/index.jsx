@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
+import Switch from 'react-switch';
 import { VscColorMode } from "react-icons/vsc";
 import './Navbar.css';
 
@@ -77,20 +78,57 @@ const Navbar = () => {
           {language === 'en' ? 'Contact' : 'Contacto'}
         </button>
       </div>
-
       <div className="navbar-right">
-        <div className="language-selector">
+        {/* <div className="language-selector">
           <button 
             className={`language-toggle ${language === 'es' ? 'active' : ''}`}
             onClick={toggleLanguage}
           >
             <img 
-              src={`/${language === 'en' ? 'en' : 'es'}-flag.svg`} 
+              src={`/${language === 'en' ? 'en' : 'es'}-flag.png`} 
               alt={language === 'en' ? 'English' : 'Español'} 
             />
           </button>
+        </div> */}
+        <div className="language-selector">
+          <Switch
+            onChange={toggleLanguage}
+            checked={language === 'es'}
+            offColor="#3D7ADD"
+            onColor="#3D7ADD"
+            onHandleColor="#ffffff"
+            offHandleColor="#ffffff"
+            handleDiameter={20}
+            checkedIcon={
+              <img 
+                src="/en-flag.png" 
+                alt="English" 
+                style={{ 
+                  width: 14, 
+                  height: 14, 
+                  position: 'absolute', 
+                  top: '50%', 
+                  left: '50%', 
+                  transform: 'translate(-50%, -50%)' 
+                }}  
+              />
+            }
+            uncheckedIcon={
+              <img 
+                src="/es-flag.png" 
+                alt="Español" 
+                style={{ 
+                  width: 14, 
+                  height: 14, 
+                  position: 'absolute', 
+                  top: '50%', 
+                  left: '50%', 
+                  transform: 'translate(-50%, -50%)' 
+                }} 
+              />
+            }
+          />
         </div>
-
         <button
           onClick={toggleTheme}
           aria-label="color mode"
@@ -98,8 +136,6 @@ const Navbar = () => {
         >
           <VscColorMode className="theme-icon" />
         </button>
-        
-        
       </div>
     </nav>
   );
