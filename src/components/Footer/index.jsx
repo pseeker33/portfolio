@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
+import { FaGithub } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,15 +9,15 @@ const Footer = () => {
   return (
     <footer className="footer">
       <a 
-        href="https://github.com/your-username" 
+        href="https://github.com/pseeker33" 
         target="_blank" 
         rel="noopener noreferrer"
         className="footer-link"
       >
-        <img 
-          src={`/icons/github-${isDarkMode ? 'light' : 'dark'}.svg`} 
-          alt="GitHub" 
-          className="github-icon"
+        <FaGithub 
+          size={24} 
+          color={isDarkMode ? '#ffffff' : '#000000'} // Cambia de color según el modo oscuro
+          className="github-icon" 
         />
         <span>Created by Hoover Zavala</span>
       </a>

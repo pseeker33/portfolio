@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useContext } from 'react';
+import * as emailjs from '@emailjs/browser';
 import { ThemeContext } from '../../context/ThemeContext';
 
 const ContactForm = ({ onClose }) => {
@@ -11,16 +12,28 @@ const ContactForm = ({ onClose }) => {
   });
   const [status, setStatus] = useState('');
 
+  useEffect(() => {
+    emailjs.init('R6Gsp4_ziErLZ-QsE');
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
 
     try {
-      // Here you would typically make an API call to your email service
-      // For now, we'll simulate sending with a timeout
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await emailjs.send(
+        'service_6up6mf1', 
+        'template_ie91088', 
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'zavalah222@gmail.com'
+        },
+      );
+
+      console.log('Email sent', response);
       
-      // Reset form and show success message
       setFormData({ name: '', email: '', message: '' });
       setStatus('success');
       setTimeout(() => {
@@ -29,6 +42,7 @@ const ContactForm = ({ onClose }) => {
       }, 2000);
     } catch (error) {
       setStatus('error');
+      console.error('Email send error:', error);
     }
   };
 
