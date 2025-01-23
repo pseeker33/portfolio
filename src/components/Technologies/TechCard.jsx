@@ -1,17 +1,23 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 
-const TechCard = ({ title, technologies }) => {
+const TechCard = ({ title, skills }) => {
   const { language } = useContext(ThemeContext);
 
   return (
-    <div className="tech-card">
-      <h3>{title[language]}</h3>
-      <div className="tech-grid">
-        {technologies.map((tech) => (
-          <div key={tech.name} className="tech-item">
-            <img src={tech.icon} alt={tech.name} className="tech-icon" />
-            <span className="tech-name">{tech.name}</span>
+    <div className="technology-card">
+      <h3 className="technology-card-title">
+        {typeof title === 'object' ? title[language] : title}
+      </h3>
+      <div className="technology-skills-list">
+        {skills.map((skill, index) => (
+          <div key={index} className="technology-skill-item">
+            <img 
+              src={skill.image} 
+              alt={skill.name} 
+              className="technology-skill-icon" 
+            />
+            {skill.name}
           </div>
         ))}
       </div>
