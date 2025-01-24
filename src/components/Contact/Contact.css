@@ -4,7 +4,6 @@
   margin-top: 2rem;
   text-align: center;
   /* background-color: darkgray; */
-
 }
 
 .contact h2 {
@@ -54,12 +53,12 @@
 
 .modal-overlay {
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
@@ -140,7 +139,7 @@
 }
 
 .submit-button.success {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 
 .submit-button.error {
@@ -156,32 +155,10 @@
   gap: 0.35rem;
   padding: 0.85rem 1.5rem;
   border: 2px solid var(--button-color);
-  /* color: var(--font-color); */
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-/* 
-.contact-social-btn::before {
-content: '';
-position: absolute;
-top: 0;
-left: -100%;
-width: 200%;
-height: 100%;
-background: linear-gradient(
-  25deg, 
-  var(--button-color) 0%, 
-  var(--button-color) 50%, 
-  white 50%
-);
-transition: left 0.5s ease;
-z-index: -1;
-}
-
-.contact-social-btn:hover::before {
-left: 0;
-} */
 
 .contact-social-btn:hover {
   background-color: var(--button-color);
@@ -200,7 +177,6 @@ left: 0;
 .contact-social-btn:hover .contact-social-icon {
   color: white;
 }
-
 
 @media (max-width: 768px) {
   .contact {

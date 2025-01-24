@@ -31,8 +31,8 @@ export const projectCategories = {
     {
       id: 'data3',
       title: {
-        en: 'Natural Language Processing Tool',
-        es: 'Herramienta de Procesamiento de Lenguaje Natural'
+        en: 'NLP Tool',
+        es: 'Herramienta de LNP'
       },
       description: {
         en: 'NLP tool built with spaCy and BERT for sentiment analysis and text classification in multiple languages',

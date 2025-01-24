@@ -79,17 +79,6 @@ const Navbar = () => {
         </button>
       </div>
       <div className="navbar-right">
-        {/* <div className="language-selector">
-          <button 
-            className={`language-toggle ${language === 'es' ? 'active' : ''}`}
-            onClick={toggleLanguage}
-          >
-            <img 
-              src={`/${language === 'en' ? 'en' : 'es'}-flag.png`} 
-              alt={language === 'en' ? 'English' : 'Español'} 
-            />
-          </button>
-        </div> */}
         <div className="language-selector">
           <Switch
             onChange={toggleLanguage}

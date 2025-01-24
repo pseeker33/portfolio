@@ -43,7 +43,6 @@ const Contact = () => {
           }}
         />
       </div>
-
       {showForm && (
         <div className="modal-overlay">
           <div className="modal">

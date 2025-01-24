@@ -26,3 +26,15 @@ a {
 a:hover {
   color: var(--hover-color);
 }
+
+/* Globalmente elimina el borde predeterminado del navegador */
+/* *:focus {
+  outline: none;
+} */
+
+/* Opcionalmente personaliza el enfoque */
+button:focus, .theme-toggle:focus {
+  outline: none;
+  /*outline: 2px solid var(--hover-color);  Personaliza el color del enfoque */
+  outline-offset: 4px; /* Separa el borde del contenido */
+}

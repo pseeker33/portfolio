@@ -1,5 +1,4 @@
 .projects {
-  /* min-height: 100vh; */
   padding: 3rem 1rem;
   margin-top: 2rem;
   /* background-color: darkgray; */
@@ -25,11 +24,7 @@
 
 .project-nav {
   min-width: 350px;
-  /*  */
-  /* border-left: 0px solid var(--border-color); */
-  /* border-right: none; */
   padding-left: 1.5rem;
-  /* padding-right: 0; */
   transition: border-left 0.3s ease;
   position: relative;
 }
@@ -53,20 +48,14 @@
 
 .category-container {
   margin-bottom: 0.5rem;
-/*   border-radius: 8px;
-  overflow: hidden */
 }
 
 .category-button {
   width: 100%;
   padding: 1rem 1.5rem;
-  /* padding: 0.75rem 1rem; */
   text-align: left;
   background: none;
   border: none;
-  /* background: var(--background-color); */
-  /* border: 1px solid var(--border-color); */
-  /* border-radius: 8px; */
   color: var(--font-color);
   font-size: 1.5rem;
   cursor: pointer;
@@ -74,7 +63,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: relative; */
 }
 
 /* Add arrow */
@@ -96,9 +84,6 @@
 
 .category-button.active {
   color: var(--hover-color);
-  /* background-color: var(--hover-color); */
-/*   border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0; */
 }
 
 .project-list {
@@ -106,9 +91,8 @@
   flex-direction: column;
   margin-left: 1rem;
   gap: 0.5rem;
-  border: none;
-  /* Añadir animación de despliegue */
-  animation: slideDown 0.3s ease-out;
+  border: none;  
+  animation: slideDown 0.3s ease-out; /* animación de despliegue */
 }
 
 @keyframes slideDown {
@@ -154,9 +138,6 @@
   right: -6px;
   top: 12px;
   transform: rotate(-135deg);
-  /* left: -6px;
-  top: 50%; */
-  /* transform: translateY(-50%) rotate(45deg); */
   width: 10px;
   height: 10px;
   background-color: var(--background-color);
@@ -227,22 +208,6 @@
   padding-left: 2rem;
   background: none;
 }
-
-
-/* .project-button:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  padding-left: 2rem;
-} */
-
-/* .project-button:hover::before {
-  transform: scaleY(1);
-} */
-
-/* .project-button.active {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: var(--hover-color);
-  padding-left: 2rem;
-} */
 
 .project-button.active::before {
   transform: scaleY(1);
