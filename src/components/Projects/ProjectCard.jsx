@@ -17,9 +17,11 @@ const ProjectCard = ({ project }) => {
         alt={project.title[language]}
         className="project-image"
       />
-      {/* <div className="project-info">
-        <h3>{project.title[language]}</h3>
-        <p>{project.description[language]}</p> */}
+      <div className="project-technologies">
+        {project.technologies.map((tech, index) => (
+          <span key={index} className="tech-tag">{tech}</span>
+        ))}
+      </div>
       <div className="project-links">
         {project.demo && (
           <a href={project.demo} target="_blank" rel="noopener noreferrer">
@@ -33,7 +35,6 @@ const ProjectCard = ({ project }) => {
         )}
       </div>
     </div>
-    // </div>
   );
 };
 

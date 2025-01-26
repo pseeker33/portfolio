@@ -90,7 +90,7 @@ const Navbar = () => {
             handleDiameter={20}
             checkedIcon={
               <img 
-                src="/en-flag.png" 
+                src="/images/en-flag.png" 
                 alt="English" 
                 style={{ 
                   width: 14, 
@@ -104,7 +104,7 @@ const Navbar = () => {
             }
             uncheckedIcon={
               <img 
-                src="/es-flag.png" 
+                src="/images/es-flag.png" 
                 alt="Español" 
                 style={{ 
                   width: 14, 

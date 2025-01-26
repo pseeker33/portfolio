@@ -10,6 +10,12 @@ export const projectCategories = {
         en: 'Interactive dashboard built with Python and Streamlit for analyzing sales trends and customer behavior across multiple regions',
         es: 'Dashboard interactivo construido con Python y Streamlit para analizar tendencias de ventas y comportamiento del cliente en múltiples regiones'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/data-project-1.jpg',
       demo: 'https://demo.example.com/sales-dashboard',
       github: 'https://github.com/example/sales-analytics'
@@ -24,6 +30,12 @@ export const projectCategories = {
         en: 'End-to-end ML pipeline using scikit-learn and MLflow for predicting customer churn with 89% accuracy',
         es: 'Pipeline completo de ML usando scikit-learn y MLflow para predecir la deserción de clientes con 89% de precisión'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/data-project-2.jpg',
       demo: 'https://demo.example.com/ml-pipeline',
       github: 'https://github.com/example/ml-pipeline'
@@ -38,6 +50,12 @@ export const projectCategories = {
         en: 'NLP tool built with spaCy and BERT for sentiment analysis and text classification in multiple languages',
         es: 'Herramienta de NLP construida con spaCy y BERT para análisis de sentimientos y clasificación de texto en múltiples idiomas'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/data-project-3.jpg',
       demo: 'https://demo.example.com/nlp-tool',
       github: 'https://github.com/example/nlp-tool'
@@ -54,6 +72,12 @@ export const projectCategories = {
         en: 'Full-stack e-commerce platform built with React, Node.js, and MongoDB, featuring real-time inventory management',
         es: 'Plataforma completa de comercio electrónico construida con React, Node.js y MongoDB, con gestión de inventario en tiempo real'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/web-project-1.jpg',
       demo: 'https://demo.example.com/ecommerce',
       github: 'https://github.com/example/ecommerce'
@@ -68,6 +92,12 @@ export const projectCategories = {
         en: 'Real-time collaborative task management application using React, Firebase, and Material-UI',
         es: 'Aplicación colaborativa de gestión de tareas en tiempo real usando React, Firebase y Material-UI'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/web-project-2.jpg',
       demo: 'https://demo.example.com/task-manager',
       github: 'https://github.com/example/task-manager'
@@ -82,6 +112,12 @@ export const projectCategories = {
         en: 'Responsive social media analytics dashboard with real-time data visualization using D3.js and Vue.js',
         es: 'Dashboard responsive de análisis de redes sociales con visualización de datos en tiempo real usando D3.js y Vue.js'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/web-project-3.jpg',
       demo: 'https://demo.example.com/social-dashboard',
       github: 'https://github.com/example/social-dashboard'
@@ -112,6 +148,12 @@ export const projectCategories = {
         en: 'Full-featured NFT marketplace with minting capabilities built on Polygon using ERC-721 standards',
         es: 'Mercado completo de NFTs con capacidades de acuñación construido en Polygon usando estándares ERC-721'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/blockchain-project-2.jpg',
       demo: 'https://demo.example.com/nft-market',
       github: 'https://github.com/example/nft-market'
@@ -126,6 +168,12 @@ export const projectCategories = {
         en: 'Decentralized governance platform with proposal creation and voting mechanisms using smart contracts',
         es: 'Plataforma de gobernanza descentralizada con mecanismos de creación y votación de propuestas usando contratos inteligentes'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/blockchain-project-3.jpg',
       demo: 'https://demo.example.com/dao-platform',
       github: 'https://github.com/example/dao-platform'
@@ -142,6 +190,12 @@ export const projectCategories = {
         en: 'Custom CRM solution built with Airtable and Zapier, featuring automated email campaigns and lead scoring',
         es: 'Solución CRM personalizada construida con Airtable y Zapier, con campañas de email automatizadas y puntuación de leads'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/nocode-project-1.jpg',
       demo: 'https://demo.example.com/crm-system',
       github: null
@@ -156,6 +210,12 @@ export const projectCategories = {
         en: 'Comprehensive event management solution using Bubble.io with integrated payment processing and attendee tracking',
         es: 'Solución integral de gestión de eventos usando Bubble.io con procesamiento de pagos integrado y seguimiento de asistentes'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/nocode-project-2.jpg',
       demo: 'https://demo.example.com/event-platform',
       github: null
@@ -170,6 +230,12 @@ export const projectCategories = {
         en: 'Subscription-based learning platform built with Webflow and Memberstack, featuring gated content and user authentication',
         es: 'Plataforma de aprendizaje basada en suscripción construida con Webflow y Memberstack, con contenido protegido y autenticación de usuarios'
       },
+      technologies: [
+        'React', 
+        'Node.js', 
+        'MongoDB', 
+        'Express'
+      ],
       image: '/nocode-project-3.jpg',
       demo: 'https://demo.example.com/membership-site',
       github: null

@@ -1,17 +1,25 @@
-import { useContext, useState } from 'react';
-import { ThemeContext } from '../../context/ThemeContext';
-import { categoryNames } from '../../data/projects';
+import { useContext, useState } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+import { categoryNames } from "../../data/projects";
 
-const ProjectNav = ({ categories, activeCategory, setActiveCategory, activeProject, setActiveProject }) => {
+const ProjectNav = ({
+  categories,
+  activeCategory,
+  setActiveCategory,
+  activeProject,
+  setActiveProject,
+}) => {
   const { language } = useContext(ThemeContext);
   const [hoveredProject, setHoveredProject] = useState(null);
 
   return (
     <nav className="project-nav">
-      {Object.keys(categories).map(category => (
+      {Object.keys(categories).map((category) => (
         <div key={category} className="category-container">
-          <button 
-            className={`category-button ${activeCategory === category ? 'active' : ''}`}
+          <button
+            className={`category-button ${
+              activeCategory === category ? "active" : ""
+            }`}
             onClick={() => {
               setActiveCategory(activeCategory === category ? null : category);
               setActiveProject(null);
@@ -20,23 +28,25 @@ const ProjectNav = ({ categories, activeCategory, setActiveCategory, activeProje
           >
             {categoryNames[category][language]}
           </button>
-          
+
           {activeCategory === category && (
             <div className="project-list">
-              {categories[category].map(project => (
-              <div 
-                key={project.id} 
-                className="project-button-container"
-                onMouseEnter={() => {
-                  if (activeProject?.id !== project.id) {
-                    setHoveredProject(project);
-                  }
-                }}
-                onMouseLeave={() => setHoveredProject(null)}
-              >
+              {categories[category].map((project) => (
+                <div
+                  key={project.id}
+                  className="project-button-container"
+                  onMouseEnter={() => {
+                    if (activeProject?.id !== project.id) {
+                      setHoveredProject(project);
+                    }
+                  }}
+                  onMouseLeave={() => setHoveredProject(null)}
+                >
                   <button
                     // key={project.id}
-                    className={`project-button ${activeProject?.id === project.id ? 'active' : ''}`}
+                    className={`project-button ${
+                      activeProject?.id === project.id ? "active" : ""
+                    }`}
                     onClick={() => {
                       setActiveProject(project);
                       setHoveredProject(null);
@@ -44,7 +54,8 @@ const ProjectNav = ({ categories, activeCategory, setActiveCategory, activeProje
                   >
                     {project.title[language]}
                   </button>
-                  {((hoveredProject?.id === project.id) || (activeProject?.id === project.id && !hoveredProject)) && (
+                  {(hoveredProject?.id === project.id ||
+                    (activeProject?.id === project.id && !hoveredProject)) && (
                     <div className="project-tooltip">
                       <p>{project.description[language]}</p>
                     </div>
