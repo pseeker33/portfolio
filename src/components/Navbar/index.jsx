@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <img src="/placeholder-logo.svg" alt="Logo" className="logo" />
+        <img src="/mi-rounded-avatar-light.jpg" alt="Logo" className="logo" />
         <span className="portfolio-label">Portfolio</span>
       </div>
 
