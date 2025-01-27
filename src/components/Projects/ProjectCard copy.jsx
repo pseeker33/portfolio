@@ -1,8 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import { FaGithub, FaPlayCircle, FaExternalLinkAlt, FaDesktop, FaEye, FaRocket } from "react-icons/fa";
-
-import Button from "../Contact/Button";
 
 const ProjectCard = ({ project }) => {
   const { language } = useContext(ThemeContext);
@@ -25,21 +22,16 @@ const ProjectCard = ({ project }) => {
           <span key={index} className="tech-tag">{tech}</span>
         ))}
       </div>
-      <div className="contact-buttons">
+      <div className="project-links">
         {project.demo && (
-          <Button
-            text={language === "en" ? "LIVE DEMO" : "VER DEMO"}
-            link={project.demo}
-            icon={<FaEye />}
-            
-          />
+          <a href={project.demo} target="_blank" rel="noopener noreferrer">
+            {language === "en" ? "Live Demo" : "Demo en Vivo"}
+          </a>
         )}
         {project.github && (
-          <Button
-            text="GITHUB"
-            link={project.github}
-            icon={<FaGithub />} 
-          />
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>
         )}
       </div>
     </div>

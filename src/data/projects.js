@@ -66,19 +66,19 @@ export const projectCategories = {
     {
       id: 'web1',
       title: {
-        en: 'E-commerce Platform',
-        es: 'Plataforma de Comercio Electrónico'
+        en: 'Lyfestyle Store',
+        es: 'Lyfestyle Store'
       },
       description: {
-        en: 'A modern responsive e-commerce platform designed for selling branded accessories. Built with HTML, CSS, and vanilla JavaScript, this project delivers an elegant and user-friendly shopping experience.',
-        es: 'Una moderna plataforma de comercio electrónico responsive diseñada para la venta de accesorios de marca. Construida con HTML, CSS y JavaScript puro, este proyecto ofrece una experiencia de compra elegante y fácil de usar'
+        en: 'A modern, responsive e-commerce platform for branded accessories. It offers an elegant and user-friendly shopping experience, built with HTML, CSS, and vanilla JavaScript.',
+        es: 'Plataforma e-commerce moderna y responsive para accesorios de marca. Ofrece una experiencia de compra elegante y fácil de usar, construida con HTML, CSS y JavaScript puro.'
       },
       technologies: [
-        'Vanilla Javascript', 
+        'Javascript', 
         'HTML', 
         'CSS'
       ],
-      image: '/portrait.png',
+      image: '../../public/images/lifestyle1-portrait.png',
       demo: 'https://pseeker33.github.io/lifestyle-store/',
       github: 'https://github.com/pseeker33/lifestyle-store'
     },

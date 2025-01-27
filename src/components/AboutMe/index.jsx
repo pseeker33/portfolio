@@ -26,7 +26,7 @@ const AboutMe = () => {
         <TypeWriter 
           texts={roles[language]} 
           delay={50} 
-          pauseBetweenTexts={2000} 
+          pauseBetweenTexts={1000} 
         />
       </div>
       <img 
