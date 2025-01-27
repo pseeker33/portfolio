@@ -3,22 +3,23 @@ export const projectCategories = {
     {
       id: 'data1',
       title: {
-        en: 'Sales Analytics Dashboard',
-        es: 'Dashboard de Análisis de Ventas'
+        en: 'Road Accident Analytics',
+        es: 'Analítica de Siniestros Viales'
       },
       description: {
-        en: 'Interactive dashboard built with Python and Streamlit for analyzing sales trends and customer behavior across multiple regions',
-        es: 'Dashboard interactivo construido con Python y Streamlit para analizar tendencias de ventas y comportamiento del cliente en múltiples regiones'
+        en: 'Data analysis of traffic accidents in the City of Buenos Aires using data preparation, analysis, and interactive visualization techniques.',
+        es: 'Análisis de datos de los siniestros viales en la Ciudad de Buenos Aires aplicando técnicas de preparacion, análisis y visualización interactiva de datos'
       },
       technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
+        'Python', 
+        'Pandas', 
+        'Matplotlib', 
+        'NumPy',
+        'Power BI'
       ],
-      image: '/data-project-1.jpg',
-      demo: 'https://demo.example.com/sales-dashboard',
-      github: 'https://github.com/example/sales-analytics'
+      image: '../../public/images/dashboard.png',
+      demo: null,
+      github: 'https://github.com/pseeker33/Data_Analytics_Siniestros_Viales_en_Ciudad_de_Buenos_Aires'
     },
     {
       id: 'data2',
@@ -69,18 +70,17 @@ export const projectCategories = {
         es: 'Plataforma de Comercio Electrónico'
       },
       description: {
-        en: 'Full-stack e-commerce platform built with React, Node.js, and MongoDB, featuring real-time inventory management',
-        es: 'Plataforma completa de comercio electrónico construida con React, Node.js y MongoDB, con gestión de inventario en tiempo real'
+        en: 'A modern responsive e-commerce platform designed for selling branded accessories. Built with HTML, CSS, and vanilla JavaScript, this project delivers an elegant and user-friendly shopping experience.',
+        es: 'Una moderna plataforma de comercio electrónico responsive diseñada para la venta de accesorios de marca. Construida con HTML, CSS y JavaScript puro, este proyecto ofrece una experiencia de compra elegante y fácil de usar'
       },
       technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
+        'Vanilla Javascript', 
+        'HTML', 
+        'CSS'
       ],
-      image: '/web-project-1.jpg',
-      demo: 'https://demo.example.com/ecommerce',
-      github: 'https://github.com/example/ecommerce'
+      image: '/portrait.png',
+      demo: 'https://pseeker33.github.io/lifestyle-store/',
+      github: 'https://github.com/pseeker33/lifestyle-store'
     },
     {
       id: 'web2',
