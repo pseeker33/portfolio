@@ -30,7 +30,7 @@ const AboutMe = () => {
         />
       </div>
       <img 
-        src="../../../public/images/profile.jpeg" 
+        src="../../../images/profile.png" 
         alt="Hoover Zavala" 
         className="profile-picture" 
       />
