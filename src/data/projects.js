@@ -1,3 +1,5 @@
+import dashboardImage from '../assets/images/dashboard.png'
+
 export const projectCategories = {
   data: [
     {
@@ -17,7 +19,7 @@ export const projectCategories = {
         'NumPy',
         'Power BI'
       ],
-      image: '../../public/images/dashboard.png',
+      image: dashboardImage,
       demo: null,
       github: 'https://github.com/pseeker33/Data_Analytics_Siniestros_Viales_en_Ciudad_de_Buenos_Aires'
     },
