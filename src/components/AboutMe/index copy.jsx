@@ -2,7 +2,6 @@ import { useContext, useState, useEffect } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import TypeWriter from './TypeWriter';
 import { roles, descriptions } from '../../data/about';
-import profileImage from '../../../public/images/profile.png';
 import './AboutMe.css';
 
 const AboutMe = () => {
@@ -30,9 +29,8 @@ const AboutMe = () => {
           pauseBetweenTexts={1000} 
         />
       </div>
-      <img
-        src={profileImage}
-        // src="../../../images/profile.png" 
+      <img 
+        src="../../../images/profile.png" 
         alt="Hoover Zavala" 
         className="profile-picture" 
       />
