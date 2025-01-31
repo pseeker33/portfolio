@@ -1,4 +1,6 @@
-import dashboardImage from '../assets/images/dashboard.png'
+import dashboard1Image from '../assets/images/dashboard1-portrait.png'
+import store1Image from '../assets/images/lifestyle1-portrait.png'
+import game1Image from '../assets/images/tic-tac-toe-portrait.png'
 
 export const projectCategories = {
   data: [
@@ -19,7 +21,7 @@ export const projectCategories = {
         'NumPy',
         'Power BI'
       ],
-      image: dashboardImage,
+      image: dashboard1Image,
       demo: null,
       github: 'https://github.com/pseeker33/Data_Analytics_Siniestros_Viales_en_Ciudad_de_Buenos_Aires'
     },
@@ -80,29 +82,29 @@ export const projectCategories = {
         'HTML', 
         'CSS'
       ],
-      image: '../../public/images/lifestyle1-portrait.png',
+      image: store1Image,
       demo: 'https://pseeker33.github.io/lifestyle-store/',
       github: 'https://github.com/pseeker33/lifestyle-store'
     },
     {
       id: 'web2',
       title: {
-        en: 'Task Management App',
-        es: 'Aplicación de Gestión de Tareas'
+        en: 'Tic Tac Toe',
+        es: 'Tres en Raya'
       },
       description: {
-        en: 'Real-time collaborative task management application using React, Firebase, and Material-UI',
-        es: 'Aplicación colaborativa de gestión de tareas en tiempo real usando React, Firebase y Material-UI'
+        en: 'A nice Tic-Tac-Toe game with sound effects. Chill out and beat the computer!',
+        es: 'Un bonito juego de Tres en Raya con efectos de sonido. ¡Relájate y vence a la computadora!'
       },
       technologies: [
+        'Javascript', 
         'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
+        'HTML', 
+        'CSS'
       ],
-      image: '/web-project-2.jpg',
-      demo: 'https://demo.example.com/task-manager',
-      github: 'https://github.com/example/task-manager'
+      image: game1Image,
+      demo: 'https://tic-tac-toe-game-eight-gold.vercel.app',
+      github: 'https://github.com/pseeker33/tic-tac-toe-game'
     },
     {
       id: 'web3',
