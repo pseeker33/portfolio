@@ -2,7 +2,7 @@ import { useContext, useState, useEffect } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
 import TypeWriter from './TypeWriter';
 import { roles, descriptions } from '../../data/about';
-import profileImage from '../../../public/images/profile.png';
+import profileImage from '../../assets/images/profile.png';
 import './AboutMe.css';
 
 const AboutMe = () => {
