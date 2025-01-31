@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import { FaGithub, FaPlayCircle, FaExternalLinkAlt, FaDesktop, FaEye, FaRocket } from "react-icons/fa";
+import { FaGithub, FaEye } from "react-icons/fa";
 
 import Button from "../Contact/Button";
 
