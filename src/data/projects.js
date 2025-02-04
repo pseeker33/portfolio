@@ -97,9 +97,9 @@ export const projectCategories = {
         es: 'Un bonito juego de Tres en Raya con efectos de sonido. ¡Relájate y vence a la computadora!'
       },
       technologies: [
-        'Javascript', 
-        'React', 
-        'HTML', 
+        'Javascript',
+        'React',
+        'HTML',
         'CSS'
       ],
       image: game1Image,
