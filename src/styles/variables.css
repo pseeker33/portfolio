@@ -1,6 +1,7 @@
 :root[data-theme="dark"] {
   --title-color: #E3E8EA;
   --font-color: #A6AEBF;
+  --highlited-font-color: #FFFFFF;
   --background-color: #0B1622;
   --hover-color: #3D7ADD;
   --border-color: #3D7ADD;
@@ -10,6 +11,7 @@
 :root[data-theme="light"] {
   --title-color: #0B1622;
   --font-color: #0B1622;
+  --highlited-font-color: #000000;
   --background-color: #EDF2F4;
   --hover-color: #3D7ADD;
   --border-color: #3D7ADD;

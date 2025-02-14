@@ -1,6 +1,8 @@
 import dashboard1Image from '../assets/images/dashboard1-portrait.png'
 import store1Image from '../assets/images/lifestyle1-portrait.png'
 import game1Image from '../assets/images/tic-tac-toe-portrait.png'
+import dapp1Image from '../assets/images/simplebank-portrait.png'
+import app1Image from '../assets/images/blog-dashboard-portrait.png'
 
 export const projectCategories = {
   data: [
@@ -109,38 +111,45 @@ export const projectCategories = {
     {
       id: 'web3',
       title: {
-        en: 'Social Media Dashboard',
-        es: 'Dashboard de Redes Sociales'
+        en: 'Blog Dashboard App',
+        es: 'Dashboard para Blogs'
       },
       description: {
-        en: 'Responsive social media analytics dashboard with real-time data visualization using D3.js and Vue.js',
-        es: 'Dashboard responsive de análisis de redes sociales con visualización de datos en tiempo real usando D3.js y Vue.js'
+        en: 'Create, edit, and delete your blog entries. Authenticate and access your profile. You can also manage users and content with Django using SQLite in a local environment or PostgreSQL in a development environment!',
+        es: 'Crea, edita y elimina tus entradas de blog. Auntenticate y accede a tu perfil. Tambien puedes gestionar usuarios y contenido con Django usando SQLite en entorno local o Postgresql en entorno de desarrollo!'
       },
       technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
+        'Python', 
+        'Django',
+        'PostgreSQL',
+        'Bootstrap', 
+        'CSS'
       ],
-      image: '/web-project-3.jpg',
-      demo: 'https://demo.example.com/social-dashboard',
-      github: 'https://github.com/example/social-dashboard'
+      image: app1Image,
+      demo: 'https://django-blog-app-4mst.onrender.com',
+      github: 'https://github.com/pseeker33/django-blog-app.git'
     }
   ],
   blockchain: [
     {
       id: 'blockchain1',
       title: {
-        en: 'DeFi Lending Platform',
-        es: 'Plataforma de Préstamos DeFi'
+        en: 'SimpleBank Dapp',
+        es: 'SimpleBank Dapp'
       },
       description: {
-        en: 'Decentralized lending platform built on Ethereum using Solidity and Web3.js with automated interest rates',
-        es: 'Plataforma descentralizada de préstamos construida en Ethereum usando Solidity y Web3.js con tasas de interés automatizadas'
+        en: 'Web3 application that simulates the essential functions of a decentralized bank. Connect your MetaMask wallet and manage your funds on the Ethereum blockchain!',
+        es: 'Aplicación Web3 que simula las funciones esenciales de un banco descentralizado. Conéctate con tu wallet de MetaMask y gestiona tus fondos en la blockchain de Ethereum!'
       },
-      image: '/blockchain-project-1.jpg',
-      demo: 'https://demo.example.com/defi-platform',
-      github: 'https://github.com/example/defi-platform'
+      technologies: [
+        'Solidity', 
+        'Hardhat', 
+        'Ethers',
+        'React'
+      ],
+      image: dapp1Image,
+      demo: 'https://simple-bank-dapp-fawn.vercel.app',
+      github: 'https://github.com/pseeker33/web3bank'
     },
     {
       id: 'blockchain2',
