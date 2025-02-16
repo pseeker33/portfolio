@@ -35,7 +35,7 @@ export const projectCategories = {
         es: 'API para Consultas de Steam'
       },
       description: {
-        en: 'MLOps that implements a Steam data query server. It applies RESTful API, data analysis, and processing. Yu can query games, user data, or get personalized recommendations!',
+        en: 'MLOps that implements a Steam data query server. It applies RESTful API, data analysis, and processing. You can query games, user data, or get personalized recommendations!',
         es: 'MLOps que implementa un servidor de consultas de datos de la plataforma Steam. Aplica API Restful, análisis y procesamiento de datos. Puedes consultar juegos, datos de usuarios u obten recomendaciones personalizadas! '
       },
       technologies: [
