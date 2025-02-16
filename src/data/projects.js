@@ -3,6 +3,7 @@ import store1Image from '../assets/images/lifestyle1-portrait.png'
 import game1Image from '../assets/images/tic-tac-toe-portrait.png'
 import dapp1Image from '../assets/images/simplebank-portrait.png'
 import app1Image from '../assets/images/blog-dashboard-portrait.png'
+import mlops1Image from '../assets/images/steam-api-portrait.png'
 
 export const projectCategories = {
   data: [
@@ -30,22 +31,23 @@ export const projectCategories = {
     {
       id: 'data2',
       title: {
-        en: 'Machine Learning Pipeline',
-        es: 'Pipeline de Machine Learning'
+        en: 'Steam Data Query API',
+        es: 'API para Consultas de Steam'
       },
       description: {
-        en: 'End-to-end ML pipeline using scikit-learn and MLflow for predicting customer churn with 89% accuracy',
-        es: 'Pipeline completo de ML usando scikit-learn y MLflow para predecir la deserción de clientes con 89% de precisión'
+        en: 'MLOps that implements a Steam data query server. It applies RESTful API, data analysis, and processing. Yu can query games, user data, or get personalized recommendations!',
+        es: 'MLOps que implementa un servidor de consultas de datos de la plataforma Steam. Aplica API Restful, análisis y procesamiento de datos. Puedes consultar juegos, datos de usuarios u obten recomendaciones personalizadas! '
       },
       technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
+        'Python',
+        'Scikit Learn',
+        'Pandas',
+        'FastAPI',
+        'Render'
       ],
-      image: '/data-project-2.jpg',
-      demo: 'https://demo.example.com/ml-pipeline',
-      github: 'https://github.com/example/ml-pipeline'
+      image: mlops1Image,
+      demo: 'https://consultassteam.onrender.com',
+      github: 'https://github.com/pseeker33/mlops-steam-api'
     },
     {
       id: 'data3',
