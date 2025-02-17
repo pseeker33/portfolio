@@ -112,4 +112,28 @@
   .description {
     font-size: 1rem;
   }
+
+  .profile-picture {
+    width: 120px; /* Ajusta el tamaño según prefieras */
+    height: 120px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para un efecto visual */
+    border: 2px solid var(--title-color); /* Opcional: borde con color temático */
+  }
 }
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 480px) {
+  .profile-picture {
+    width: 90px; /* Ajusta el tamaño según prefieras */
+    height: 90px;
+    border-radius: 50%;
+    margin: 1rem 0;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para un efecto visual */
+    border: 2px solid var(--title-color); /* Opcional: borde con color temático */
+  }
+}
+
