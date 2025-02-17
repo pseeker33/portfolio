@@ -50,27 +50,28 @@ export const projectCategories = {
       image: mlops1Image,
       demo: 'https://consultassteam.onrender.com',
       github: 'https://github.com/pseeker33/mlops-steam-api'
-    },
-    {
-      id: 'data3',
-      title: {
-        en: 'NLP Tool',
-        es: 'Herramienta de LNP'
-      },
-      description: {
-        en: 'NLP tool built with spaCy and BERT for sentiment analysis and text classification in multiple languages',
-        es: 'Herramienta de NLP construida con spaCy y BERT para análisis de sentimientos y clasificación de texto en múltiples idiomas'
-      },
-      technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
-      ],
-      image: '/data-project-3.jpg',
-      demo: 'https://demo.example.com/nlp-tool',
-      github: 'https://github.com/example/nlp-tool'
     }
+    // ,
+    // {
+    //   id: 'data3',
+    //   title: {
+    //     en: 'NLP Tool',
+    //     es: 'Herramienta de LNP'
+    //   },
+    //   description: {
+    //     en: 'NLP tool built with spaCy and BERT for sentiment analysis and text classification in multiple languages',
+    //     es: 'Herramienta de NLP construida con spaCy y BERT para análisis de sentimientos y clasificación de texto en múltiples idiomas'
+    //   },
+    //   technologies: [
+    //     'React', 
+    //     'Node.js', 
+    //     'MongoDB', 
+    //     'Express'
+    //   ],
+    //   image: '/data-project-3.jpg',
+    //   demo: 'https://demo.example.com/nlp-tool',
+    //   github: 'https://github.com/example/nlp-tool'
+    // }
   ],
   webdev: [
     {
@@ -175,90 +176,92 @@ export const projectCategories = {
       image: dapp2Image,
       demo: 'https://web3-token-farm-omega.vercel.app',
       github: 'https://github.com/pseeker33/web3-token-farm'
-    },
-    {
-      id: 'blockchain3',
-      title: {
-        en: 'DAO Governance Platform',
-        es: 'Plataforma de Gobernanza DAO'
-      },
-      description: {
-        en: 'Decentralized governance platform with proposal creation and voting mechanisms using smart contracts',
-        es: 'Plataforma de gobernanza descentralizada con mecanismos de creación y votación de propuestas usando contratos inteligentes'
-      },
-      technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
-      ],
-      image: '/blockchain-project-3.jpg',
-      demo: 'https://demo.example.com/dao-platform',
-      github: 'https://github.com/example/dao-platform'
     }
-  ],
-  nocode: [
-    {
-      id: 'nocode1',
-      title: {
-        en: 'Automated CRM System',
-        es: 'Sistema CRM Automatizado'
-      },
-      description: {
-        en: 'Custom CRM solution built with Airtable and Zapier, featuring automated email campaigns and lead scoring',
-        es: 'Solución CRM personalizada construida con Airtable y Zapier, con campañas de email automatizadas y puntuación de leads'
-      },
-      technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
-      ],
-      image: '/nocode-project-1.jpg',
-      demo: 'https://demo.example.com/crm-system',
-      github: null
-    },
-    {
-      id: 'nocode2',
-      title: {
-        en: 'Event Management Platform',
-        es: 'Plataforma de Gestión de Eventos'
-      },
-      description: {
-        en: 'Comprehensive event management solution using Bubble.io with integrated payment processing and attendee tracking',
-        es: 'Solución integral de gestión de eventos usando Bubble.io con procesamiento de pagos integrado y seguimiento de asistentes'
-      },
-      technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
-      ],
-      image: '/nocode-project-2.jpg',
-      demo: 'https://demo.example.com/event-platform',
-      github: null
-    },
-    {
-      id: 'nocode3',
-      title: {
-        en: 'Membership Site',
-        es: 'Sitio de Membresía'
-      },
-      description: {
-        en: 'Subscription-based learning platform built with Webflow and Memberstack, featuring gated content and user authentication',
-        es: 'Plataforma de aprendizaje basada en suscripción construida con Webflow y Memberstack, con contenido protegido y autenticación de usuarios'
-      },
-      technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
-      ],
-      image: '/nocode-project-3.jpg',
-      demo: 'https://demo.example.com/membership-site',
-      github: null
-    }
+    // ,
+    // {
+    //   id: 'blockchain3',
+    //   title: {
+    //     en: 'DAO Governance Platform',
+    //     es: 'Plataforma de Gobernanza DAO'
+    //   },
+    //   description: {
+    //     en: 'Decentralized governance platform with proposal creation and voting mechanisms using smart contracts',
+    //     es: 'Plataforma de gobernanza descentralizada con mecanismos de creación y votación de propuestas usando contratos inteligentes'
+    //   },
+    //   technologies: [
+    //     'React', 
+    //     'Node.js', 
+    //     'MongoDB', 
+    //     'Express'
+    //   ],
+    //   image: '/blockchain-project-3.jpg',
+    //   demo: 'https://demo.example.com/dao-platform',
+    //   github: 'https://github.com/example/dao-platform'
+    // }
   ]
+  // ,
+  // nocode: [
+  //   {
+  //     id: 'nocode1',
+  //     title: {
+  //       en: 'Automated CRM System',
+  //       es: 'Sistema CRM Automatizado'
+  //     },
+  //     description: {
+  //       en: 'Custom CRM solution built with Airtable and Zapier, featuring automated email campaigns and lead scoring',
+  //       es: 'Solución CRM personalizada construida con Airtable y Zapier, con campañas de email automatizadas y puntuación de leads'
+  //     },
+  //     technologies: [
+  //       'React', 
+  //       'Node.js', 
+  //       'MongoDB', 
+  //       'Express'
+  //     ],
+  //     image: '/nocode-project-1.jpg',
+  //     demo: 'https://demo.example.com/crm-system',
+  //     github: null
+  //   },
+  //   {
+  //     id: 'nocode2',
+  //     title: {
+  //       en: 'Event Management Platform',
+  //       es: 'Plataforma de Gestión de Eventos'
+  //     },
+  //     description: {
+  //       en: 'Comprehensive event management solution using Bubble.io with integrated payment processing and attendee tracking',
+  //       es: 'Solución integral de gestión de eventos usando Bubble.io con procesamiento de pagos integrado y seguimiento de asistentes'
+  //     },
+  //     technologies: [
+  //       'React', 
+  //       'Node.js', 
+  //       'MongoDB', 
+  //       'Express'
+  //     ],
+  //     image: '/nocode-project-2.jpg',
+  //     demo: 'https://demo.example.com/event-platform',
+  //     github: null
+  //   },
+  //   {
+  //     id: 'nocode3',
+  //     title: {
+  //       en: 'Membership Site',
+  //       es: 'Sitio de Membresía'
+  //     },
+  //     description: {
+  //       en: 'Subscription-based learning platform built with Webflow and Memberstack, featuring gated content and user authentication',
+  //       es: 'Plataforma de aprendizaje basada en suscripción construida con Webflow y Memberstack, con contenido protegido y autenticación de usuarios'
+  //     },
+  //     technologies: [
+  //       'React', 
+  //       'Node.js', 
+  //       'MongoDB', 
+  //       'Express'
+  //     ],
+  //     image: '/nocode-project-3.jpg',
+  //     demo: 'https://demo.example.com/membership-site',
+  //     github: null
+  //   }
+  // ]
 };
 
 export const categoryNames = {
