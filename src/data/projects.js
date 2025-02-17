@@ -4,6 +4,8 @@ import game1Image from '../assets/images/tic-tac-toe-portrait.png'
 import dapp1Image from '../assets/images/simplebank-portrait.png'
 import app1Image from '../assets/images/blog-dashboard-portrait.png'
 import mlops1Image from '../assets/images/steam-api-portrait.png'
+import dapp2Image from '../assets/images/token-farm-portrait.png'
+
 
 export const projectCategories = {
   data: [
@@ -156,22 +158,23 @@ export const projectCategories = {
     {
       id: 'blockchain2',
       title: {
-        en: 'NFT Marketplace',
-        es: 'Mercado de NFTs'
+        en: 'DeFi Token Farming',
+        es: 'DeFi Token Farming'
       },
       description: {
-        en: 'Full-featured NFT marketplace with minting capabilities built on Polygon using ERC-721 standards',
-        es: 'Mercado completo de NFTs con capacidades de acuñación construido en Polygon usando estándares ERC-721'
+        en: 'Web3 DeFi application where users can stake LP tokens and earn protocol rewards in real-time. Fully deployed on Sepolia testnet!',
+        es: 'Aplicación DeFi Web3 donde los usuarios pueden hacer staking de tokens LP y ganar recompensas del protocolo en tiempo real. ¡Totalmente desplegada en la red de pruebas Sepolia!'
       },
       technologies: [
-        'React', 
-        'Node.js', 
-        'MongoDB', 
-        'Express'
+        'Solidity', 
+        'Hardhat', 
+        'Ethers',
+        'OpenZeppelin',
+        'React'
       ],
-      image: '/blockchain-project-2.jpg',
-      demo: 'https://demo.example.com/nft-market',
-      github: 'https://github.com/example/nft-market'
+      image: dapp2Image,
+      demo: 'https://web3-token-farm-omega.vercel.app',
+      github: 'https://github.com/pseeker33/web3-token-farm'
     },
     {
       id: 'blockchain3',
