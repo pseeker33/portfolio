@@ -104,22 +104,61 @@
   display: none;
 }
 
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.navbar-controls {
+  display: none;
+}
+
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .navbar {
     padding: 0 1rem;
+    justify-content: space-between;
   }
 
-  .portfolio-label {
+  .desktop-only {
     display: none;
   }
 
-  .menu-toggle {
+  .mobile-only {
     display: block;
-    order: 3;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--title-color);
+  }
+
+  .navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: auto;
   }
 
 
+  /* .theme-icon {
+    font-size: 24px;
+  } */
+
+  .menu-toggle {
+    display: block;
+    margin-left: 0.5rem;
+    order: 3;
+    font-size: 2rem;
+  }
+
+  .navbar-right {
+    display: none;
+  }
 
   .navbar-center {
     position: fixed;
@@ -144,21 +183,6 @@
     visibility: visible;
   }
 
-  .navbar-right {
-    display: none;
-  }
-
-  .mobile-controls {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border-color);
-    width: 100%;
-    justify-content: center;
-  }
-
   
   .mobile-controls .theme-toggle {
     padding: 4px;
@@ -180,11 +204,29 @@
     height: 35px;
   }
 
+  .portfolio-label {
+    display: none;
+  }
+
   .navbar-center button {
     font-size: 1rem;
     padding: 0.5rem;
   }
+
+  .navbar-controls .theme-icon {
+    font-size: 24px; /* Reducido de 32px */
+  }
+
+  /* Ajustar el tamaño del switch de idioma */
+  .navbar-controls .language-selector > div {  /* Selector para el componente Switch */
+    transform: scale(0.8); /* Reduce el tamaño del switch manteniendo las proporciones */
+    margin: 0 -4px; /* Compensa el espacio extra creado por el scaling */
+  }
+  
+  
 }
+
+
 
 /* Ajustes para la orientación landscape en móviles */
 @media (max-height: 480px) and (orientation: landscape) {

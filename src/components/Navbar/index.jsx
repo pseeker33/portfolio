@@ -62,23 +62,77 @@ const Navbar = () => {
     { id: "contact", labelEn: "Contact", labelEs: "Contacto" },
   ]
 
-  return (
+return (
     <nav className="navbar">
       <div className="navbar-left">
         <img src="/mi-rounded-avatar-light.jpg" alt="Logo" className="logo" />
-        <span className="portfolio-label">Portfolio</span>
+        {/* Portfolio label moved to its own container for mobile centering */}
+        <span className="portfolio-label desktop-only">Portfolio</span>
       </div>
 
-      {/* Botón de menú hamburguesa */}
-      <button 
-        className="menu-toggle"
-        onClick={() => setIsMenuOpen(!isMenuOpen)}
-        aria-label="Toggle menu"
-      >
-        {isMenuOpen ? <RiCloseLine /> : <RiMenu3Line />}
-      </button>
+      {/* New centered portfolio label for mobile */}
+      <span className="portfolio-label mobile-only">Portfolio</span>
 
-      {/* Menú principal */}
+      {/* Mobile controls moved outside the menu */}
+      <div className="navbar-controls">
+        <div className="language-selector">
+          <Switch
+            onChange={toggleLanguage}
+            checked={language === 'es'}
+            offColor="#3D7ADD"
+            onColor="#3D7ADD"
+            onHandleColor="#ffffff"
+            offHandleColor="#ffffff"
+            handleDiameter={20}
+            checkedIcon={
+              <img 
+                src="/images/en-flag.png" 
+                alt="English" 
+                style={{ 
+                  width: 14, 
+                  height: 14, 
+                  position: 'absolute', 
+                  top: '50%', 
+                  left: '50%', 
+                  transform: 'translate(-50%, -50%)' 
+                }}  
+              />
+            }
+            uncheckedIcon={
+              <img 
+                src="/images/es-flag.png" 
+                alt="Español" 
+                style={{ 
+                  width: 14, 
+                  height: 14, 
+                  position: 'absolute', 
+                  top: '50%', 
+                  left: '50%', 
+                  transform: 'translate(-50%, -50%)' 
+                }} 
+              />
+            }
+          />
+        </div>
+        <button
+          onClick={toggleTheme}
+          aria-label="color mode"
+          className="theme-toggle"
+        >
+          <VscColorMode className="theme-icon" />
+        </button>
+
+        {/* Menu toggle button */}
+        <button 
+          className="menu-toggle"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <RiCloseLine /> : <RiMenu3Line />}
+        </button>
+      </div>
+
+      {/* Navigation menu */}
       <div className={`navbar-center ${isMenuOpen ? 'active' : ''}`}>
         <button onClick={() => scrollToSection('about-me')}>
           {language === 'en' ? 'About Me' : 'Sobre Mí'}
@@ -92,59 +146,9 @@ const Navbar = () => {
         <button onClick={() => scrollToSection('contact')}>
           {language === 'en' ? 'Contact' : 'Contacto'}
         </button>
-        
-        {/* Controles para móvil */}
-        <div className="mobile-controls">
-          <div className="language-selector">
-            <Switch
-              onChange={toggleLanguage}
-              checked={language === 'es'}
-              offColor="#3D7ADD"
-              onColor="#3D7ADD"
-              onHandleColor="#ffffff"
-              offHandleColor="#ffffff"
-              handleDiameter={20}
-              checkedIcon={
-                <img 
-                  src="/images/en-flag.png" 
-                  alt="English" 
-                  style={{ 
-                    width: 14, 
-                    height: 14, 
-                    position: 'absolute', 
-                    top: '50%', 
-                    left: '50%', 
-                    transform: 'translate(-50%, -50%)' 
-                  }}  
-                />
-              }
-              uncheckedIcon={
-                <img 
-                  src="/images/es-flag.png" 
-                  alt="Español" 
-                  style={{ 
-                    width: 14, 
-                    height: 14, 
-                    position: 'absolute', 
-                    top: '50%', 
-                    left: '50%', 
-                    transform: 'translate(-50%, -50%)' 
-                  }} 
-                />
-              }
-            />
-          </div>
-          <button
-            onClick={toggleTheme}
-            aria-label="color mode"
-            className="theme-toggle"
-          >
-            <VscColorMode className="theme-icon" />
-          </button>
-        </div>
       </div>
 
-      {/* Controles para desktop */}
+      {/* Desktop controls */}
       <div className="navbar-right">
         <div className="language-selector">
           <Switch
