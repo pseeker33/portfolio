@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
+import './Technologies.css';
 
 const TechCard = ({ title, skills }) => {
   const { language } = useContext(ThemeContext);

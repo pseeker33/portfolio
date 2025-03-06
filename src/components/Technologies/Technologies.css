@@ -98,3 +98,101 @@
   width: 24px;
   height: 24px;
 }
+
+/* Estilos para tablet */
+@media (max-width: 768px) {
+  .technologies-container {
+    padding: 1.5rem 1rem;
+    min-height: auto; /* Elimina la altura mínima fija en tablets */
+  }
+
+  .technologies-title {
+    font-size: 36px;
+    margin-top: 15px;
+  }
+
+  .technologies-description {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  .technologies-cards-container {
+    gap: 20px;
+  }
+
+  .technology-card {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 15px;
+  }
+
+  .technology-card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .technology-skills-list {
+    gap: 10px;
+  }
+
+  .technology-skill-item {
+    font-size: 0.9em;
+    padding: 10px 14px;
+  }
+}
+
+/* Estilos para móvil */
+@media (max-width: 480px) {
+  .technologies-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .technologies-title {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+  .technologies-description {
+    font-size: 1rem;
+    max-width: 95%;
+  }
+
+  .technologies-cards-container {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .technology-card {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .technology-card-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .technology-skills-list {
+    gap: 8px;
+  }
+
+  .technology-skill-item {
+    font-size: 0.85em;
+    padding: 8px 10px;
+    border-radius: 10px;
+    gap: 6px;
+  }
+
+  .technology-skill-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Evita que las tarjetas crezcan demasiado en hover en móvil */
+  .technology-card:hover {
+    transform: scale(1.01);
+  }
+
+  .technology-skill-item:hover {
+    transform: scale(1.02);
+  }
+}
